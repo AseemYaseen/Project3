@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url(./Pics/back.jpg);
+    /* background-image: url(./Pics/grunge-paint-background.jpg); */
+    /* background-image: url(./Pics/white-painted-wall-texture-background.jpg); */
+    
+ }
+ html {
+    scroll-behavior: smooth;
+ }
+
+
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background:#dfdfdf;
+  overflow:hidden;
+  transition:2s;
+}
+nav:hover{
+  width:280px;
+  transition:1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom:3rem;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 20px;
+  text-transform:uppercase;
+}
+a{
+  position:relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  display:table;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width:70px;
+  height:50px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top:10px;
+  margin-left: 10px;
+}
+a:hover{
+  background: rgb(177, 161, 161);
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+.logout{
+  position:absolute;
+  bottom: 0;
+}
+
+.container{
+  display: flex;
+  display: inline-block;
+}
+
+/* /*                              */
+
+
+  Header 
+   #gridForSection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+  }
+
+  #gridForSection{
+    display: flex;
+    
+  }
+
+#headerFeedBack {
+    color: #005a6a;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 52px;
+    font-family: 'Acme', sans-serif;
+}
+
+#FeedBackSelect {
+     appearance: none; 
+    outline: 0;
+    box-shadow: none;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: .25em;
+    font-size: 15px;
+    color: #005a6a;
+  
+}
+
+.studentName {
+    margin-top: 40%;
+    font-size: 28px;
+    color: #005a6a;
+    font-weight: 700;
+}
+
+#contanierSelect{
+    margin: 0px auto;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contanierAttendees {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.studentAttend {
+    margin-top: 48%;
+    font-size: 28px;
+    color: #005a6a;
+    font-weight: 700;
+}
+
+.attendessResult{
+    text-align: center;
+    border: 3px solid black;
+    width: 140px;
+    height: 38px;
+    background-color: #005a6a;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#contanierTasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.studentTasks {
+    margin-top: 48%;
+    font-size: 28px;
+    color: #005a6a;
+    font-weight: 700;
+}
+
+
+.tasksResult{
+    text-align: center;
+    border: 3px solid black;
+    width: 140px;
+    height: 38px;
+    background-color: #005a6a;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#feedBackContanier{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2;
+    text-align: center;
+    
+}
+
+
+.coachNames {
+    color: #005a6a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.theFeedBack {
+    border: 3px solid #005a6a;
+
+}
+
+
+
+.feedContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #91d0db;
+    box-shadow: 0 0 30px rgb(156, 156, 191);
+    opacity: 0.8;
+    height: 390px;
+}
+
+#feedTextHeader {
+    color: rgb(13, 5, 73);
+}
+
+form input {
+    width: 60%;
+    height: 30px;
+    margin: 5px 0;
+    border: 1px solid grey;
+    border-radius: 3px ;
+    background-color:aliceblue ;
+    padding: 0 15px;
+    font-size: 17px;
+}
+form textarea {
+    padding: 5px 15px;
+    border: 1px solid grey;
+    border-radius: 3px ;
+    background-color:aliceblue ;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+form button {
+    border: none;
+    width: 87%;
+    height: 130%;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: beige;
+}
+
+form button:hover {
+    scale: 1.02;
+    transition: 0.8s;
+    background-color: rgb(11, 81, 77);
+    color: white;
+
+    
+}

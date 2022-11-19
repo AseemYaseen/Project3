@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="h.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<body>
+    <div class="container">
+        <div class="title_text">
+            <div class="title login">Log In</div>
+            <div class="title signup">Register</div>
+        </div>
+          <!-- header -->
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked>
+                <input type="radio" name="slider" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Register</label>
+                <div class="swip-button"></div>
+            </div>
+            <div class="form-inner">
+                <!-- login formmat -->
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="field">
+                        <button id="submit">login</button>
+                    </div>
+                    <div class="signup-link">Not a member?<a href="#">Signup By Email</a></div>
+                    <div id="using">OR Using</div>
+                    <div id="icons">
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+
+                </form>
+
+                <!-- sign up format -->
+                <form action="#" class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="First Name" required id="Fname">
+                        <p id="NameError"></p>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Last Name" required id="Lname">
+                        <span id="LNameError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Email" required id="Email">
+                        <span id="NameError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Confirm Email" required id="Cemail">
+                        <span id="NameError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Mobile Number" required id="MobileN">
+                        <span id="NameError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required id="Pass">
+                        <span id="NameError"></span>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Confirm Password" required id="Cpass">
+                        <span id="NameError"></span>
+                    </div>
+                    <div class="field">
+                        <button id="submit" onclick="func()">Register</button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="h.js"></script>
+
+
+<script>
+    const loginForm = document.querySelector("form.login");
+    const signupForm = document.querySelector("form.signup");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink= document.querySelector(".signup-link a");
+    const loginText= document.querySelector(".title_text .login");
+    const signupText= document.querySelector(".title_text .signup");
+
+    signupBtn.onclick = (() => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    });
+
+    loginBtn.onclick = (() => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+    });
+
+    signupLink.onclick=(()=>{
+        signupBtn.click()
+        return false ; 
+    }
+    )
+</script>
+</body>
+</html>

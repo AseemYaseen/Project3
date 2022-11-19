@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Attendance tabel Info</title>
+  <link rel="stylesheet" href="index1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+
+    <!-- //////////////////////////////////////////Sid Navbar-item/////////////////////////////////////////////////// -->
+  <div class="container">
+
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="./1.jpeg">
+          <span class="nav-item">Admin</span>
+        </a></li>
+
+        <li><a href="#">
+       
+          <i class="fas fa-solid fa-house-user"></i>
+          <span class="nav-item">Home page</span>
+        </a></li>
+
+        <li><a href="#">
+          <!-- <i class="fas fa-comment"></i> -->
+          <i class="fas fa-solid fa-user"></i>
+
+          <span class="nav-item">My Profile</span>
+        </a></li>
+
+        <li><a href="#">
+            <i class="fas fa-solid fa-graduation-cap"></i>
+          <span class="nav-item">Student</span>
+        </a></li>
+
+        <li><a href="#">
+            <i class="fas fa-solid fa-comments"></i>
+          <span class="nav-item">Feadback</span>
+        </a></li>
+    
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Setting</span>
+        </a></li>
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="main">
+      <div class="main-top">
+
+        <!-- <h1>Admin page</h1>  -->
+
+      </div>
+      <!-- <div class="users">
+        <div class="card">
+          <img src=""> 
+          <h4>Alaa</h4>
+          <p>Cotche</p>
+          <button>Profile</button>
+        </div>
+
+        <div class="card">
+          <img src="">
+          <h4>Mona</h4>
+          <p>Cotche</p>
+          <button>Profile</button>
+        </div>
+      </div> -->
+
+
+
+      <section class="attendance">
+        <div class="attendance-list">
+
+          <h1>Feed Back section</h1>
+        </div>
+        
+        <div class="edit_box attendance-list">
+            <!-- <button class="button" type="button" onclick="Add_traine()">Chose Student</button> -->
+            <span class="selectStudent">Select Student :</span>
+            <select id="selectStyle">
+                <option>Aseem Yaseen</option>
+                <option>Bra'a Esam</option>
+                <option>haneen shrateh</option>
+                <option>Talab Yaseen</option>
+                <option>karam daneh</option>
+            </select>
+            <button class="button" type="button">Add New Feedback</button>
+            <!-- <button class="button" type="button"></button> -->
+        </div>
+
+        <div id="firstFeedBack">Hello</div>
+        <div id="secondFeedBack"></div>
+        <div id="thirdFeedBack"></div>
+        
+        
+        <!-- <div class="edit_box attendance-list">
+            <button class="button" type="button" onclick="Add_traine()">Add traine</button>
+            <button class="button" type="button">Remove traine</button>
+            <button class="button" type="button">Take attendance</button>
+        </div> 
+         <div class="attendance-list" id="table_container">
+        </div>  -->
+
+    
+
+      </section>
+    </section>
+  </div>
+
+  <div class="feedContainer">
+    <form>
+        <p id="feedTextHeader">Give you'r new feedback Here .. </p>
+        <div class="id1">
+            <!-- <input type="text" placeholder="Coach Name">
+            <i class="far fa-user"></i>     -->
+        </div>
+        <div class="id1">
+            <textarea cols="50" rows="7" placeholder="Enter you'r  opinion .. "></textarea>
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
+
+<script src="index1.js"></script>
+</body>
+</html>
