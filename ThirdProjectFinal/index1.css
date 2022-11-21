@@ -12,7 +12,7 @@
 }
 body{
   /* background:#000000; */
-  background-image: url(./back1.jpg);
+  background-image: url(./backprofile.jpg);
   background-size:auto;
 
 }
@@ -34,7 +34,7 @@ nav{
   /* width: 280px; */
   background:#d79f03;
   overflow:hidden;
-  transition:2s;
+  transition:0.5s;
 }
 nav:hover{
   width:280px;
@@ -80,10 +80,10 @@ nav .fas{
   margin-left: 10px;
 }
 a:hover{
-  background: rgb(174, 177, 161);
+  background:rgb(159, 159, 159);
 }
 a:hover i{
-  color: #1ca559;
+  color:white;
   transition: 0.5s;
 }
 .logout{
@@ -272,10 +272,11 @@ h1{
   padding: 40px 0;
   color: #434343;
   text-align: center;
+  
 }
 
 .inner{
-  max-width: 1000px;
+  max-width: auto;
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
@@ -286,6 +287,7 @@ h1{
   height: 5px;
   background:#d79f03;
   margin: 26px auto;
+  
   
 }
 
@@ -307,6 +309,8 @@ h1{
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgb(156, 156, 191);
+  
+  
 }
 
 .testimonial img {
@@ -326,4 +330,27 @@ h1{
 
 .para {
   color: rgb(255, 241, 223);
+}
+
+
+#lettersCounter {
+  width: 20px;
+  color: #edae01;
+  display: inline-block;
+  font-size: 18px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+
+#counterText {
+  color: white;
+  font-weight: 600;
+}
+
+#redCounter {
+  color: red;
+  padding-left: 30px;
+  font-weight: 900;
+
 }

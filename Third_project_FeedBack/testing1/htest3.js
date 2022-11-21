@@ -11,8 +11,6 @@ let users=[]
         let Cpass =document.getElementById(`Cpass`).value
 
 
-        
-
 let wordVal = /^[a-zA-Z]+$/;
 let mailVal =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 let MobileVal = /^([+]\d{2})?\d{10}$/;
@@ -101,7 +99,7 @@ let passVal = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
             users.push(obj)
 
             localStorage.setItem("users", JSON.stringify(users))
-
+            window.location.href = '';
         }
     }
 
@@ -109,36 +107,34 @@ let passVal = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/
   
 
 function LogIn() {
+    window.location.href = 'index3.html';
+//     let emailLog =document.getElementById(`emailLog`).value
+//     let logPass =document.getElementById(`logPass`).value
 
-    let emailLog =document.getElementById(`emailLog`).value
-    let logPass =document.getElementById(`logPass`).value
 
 
+//     let regInfo = JSON.parse(localStorage.getItem("users"))
+// // console.log(LogIn()) 
 
-    let regInfo = JSON.parse(localStorage.getItem("users"))
-// console.log(LogIn()) 
+//     regInfo.forEach(
+//     function(obj) {
+//         if (obj.Email== emailLog && obj.password
+//             ==logPass) {
+//             console.log(`EveryThing is Ok`)
+//             window.location.href = 'http://www.google.com';
+//             return (`EveryThing is Ok`)
+//         }else{
+//             console.log(`Error`)
 
-    regInfo.forEach(
-    function(obj) {
-        if (obj.Email== emailLog && obj.password
-            ==logPass) {
-            console.log(`EveryThing is Ok`)
-            return (`EveryThing is Ok`)
-        }else{
-            console.log(`Error`)
-
-            return(`Error`)
-        }
+//             return(`Error`)
+//         }
         
-    }
-)
+//     }
+// )
   
 }
 
-window.location.href = '';
+
        
 
-console.log(LogIn())
-
-
-
+// console.log(LogIn())

@@ -44,10 +44,6 @@
           <span class="nav-item">Feadback</span>
         </a></li>
     
-        <li><a href="#">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Setting</span>
-        </a></li>
 
         <li><a href="#" class="logout">
           <i class="fas fa-sign-out-alt"></i>
@@ -63,22 +59,7 @@
         <!-- <h1>Admin page</h1>  -->
 
       </div>
-      <!-- <div class="users">
-        <div class="card">
-          <img src=""> 
-          <h4>Alaa</h4>
-          <p>Cotche</p>
-          <button>Profile</button>
-        </div>
-
-        <div class="card">
-          <img src="">
-          <h4>Mona</h4>
-          <p>Cotche</p>
-          <button>Profile</button>
-        </div>
-      </div> -->
-
+     
 
 
       <section class="attendance">
@@ -90,12 +71,7 @@
         <div class="edit_box attendance-list">
             <!-- <button class="button" type="button" onclick="Add_traine()">Chose Student</button> -->
             <span class="selectStudent">Select Student :</span>
-            <select id="selectStyle">
-                <!-- <option>Aseem Yaseen</option>
-                <option>Bra'a Esam</option>
-                <option>haneen shrateh</option>
-                <option>Talab Yaseen</option>
-                <option>karam daneh</option> -->
+            <select id="selectStyle" onchange="funcselectchange(value)">
             </select>
             
            <span> <a href="#feedTextHeader" class="button">Add New Feedback</a></span>
@@ -114,7 +90,7 @@
                   <div class="testimonial">
                       <img src="./CoachS.jpeg" alt="Pic">
                       <div class="name">Coach salama</div>
-                      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at quisquam pariatur! Impedit accusantium vitae, laborum iste quo sunt velit unde, rerum quam sapiente inventore asperiores eaque praesentium dignissimos expedita maiores delectus vel voluptas. Provident omnis vitae voluptatum tempora molestiae?</p>
+                      <pre class="para" id="salama_feedback"></pre>
   
                   </div>
                 </div>
@@ -122,7 +98,7 @@
                   <div class="testimonial">
                       <img src="./MMMM.jpeg" alt="Pic">
                       <div class="name">coach Mona</div>
-                      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at quisquam pariatur! Impedit accusantium vitae, laborum iste quo sunt velit unde, rerum quam sapiente inventore asperiores eaque praesentium dignissimos expedita maiores delectus vel voluptas. Provident omnis vitae voluptatum tempora molestiae?</p>
+                      <pre class="para" id = "mona_feedback"></pre>
   
                   </div>
                 </div>
@@ -130,7 +106,7 @@
                   <div class="testimonial">
                       <img src="./CoachA.jpeg" alt="Pic">
                       <div class="name">Coach Alaa</div>
-                      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at quisquam pariatur! Impedit accusantium vitae, laborum iste quo sunt velit unde, rerum quam sapiente inventore asperiores eaque praesentium dignissimos expedita maiores delectus vel voluptas. Provident omnis vitae voluptatum tempora molestiae?</p>
+                      <pre class="para" id="alaa_feedback"></pre>
   
                   </div>
                 </div>
@@ -139,7 +115,7 @@
                   <div class="testimonial">
                       <img src="./CoachH.jpeg" alt="Pic">
                       <div class="name">Coach Hadeel</div>
-                      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis at quisquam pariatur! Impedit accusantium vitae, laborum iste quo sunt velit unde, rerum quam sapiente inventore asperiores eaque praesentium dignissimos expedita maiores delectus vel voluptas. Provident omnis vitae voluptatum tempora molestiae?</p>
+                      <pre class="para" id="hadeel_feedback"></pre>
   
                   </div>
                 </div>
@@ -157,9 +133,10 @@
 
   <div class="feedContainer">
     <form>
-        <h2 id="feedTextHeader">Give you'r new feedback Here .. </h2>
+        <h2 id="feedTextHeader">Give a couple of words here .. </h2>
+        <span id="counterText">Letters Counter left</span><p id="lettersCounter"></p><span id="redCounter"></span>
         <div class="id1">
-            <textarea id="textArea" cols="50" rows="7" placeholder="Enter you'r  opinion .. "></textarea>
+            <textarea id="textArea" cols="50" rows="7" maxlength="30" placeholder="Enter you'r  opinion .. "></textarea>
             <a href="#selectStyle" onclick="textfunc()">Submit</a>
         </div>
     </form>
